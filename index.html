@@ -72,8 +72,8 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; line-height: 1.05;
 .eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--brass); display: inline-block; }
 
 /* Global reveal animation */
-.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
-.reveal.in { opacity: 1; transform: translateY(0); }
+.reveal { opacity: 0; transform: translateX(-40px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease); }
+.reveal.in { opacity: 1; transform: translateX(0); }
 
 /* Fallback for broken images to prevent layout shift */
 img { position: relative; background: var(--bg-darker); }
@@ -186,30 +186,30 @@ nav.links a:hover, nav.links a.active { color: var(--text-main); }
 .hero-eyebrow {
   color: var(--brass); font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; font-weight: 600;
   display: flex; align-items: center; gap: 14px;
-  opacity: 0; transform: translateY(16px); transition: all 1s var(--ease) 0.3s;
+  opacity: 0; transform: translateX(-24px); transition: all 1s var(--ease) 0.3s;
 }
 .hero-eyebrow::before { content: ''; width: 40px; height: 1px; background: var(--brass); }
-.hero.loaded .hero-eyebrow { opacity: 1; transform: translateY(0); }
+.hero.loaded .hero-eyebrow { opacity: 1; transform: translateX(0); }
 
 .hero h1 {
   color: var(--text-main); font-size: clamp(44px, 7vw, 108px);
   font-weight: 500; line-height: 0.98; max-width: 16ch;
-  opacity: 0; transform: translateY(24px); transition: all 1.2s var(--ease) 0.5s;
+  opacity: 0; transform: translateX(-32px); transition: all 1.2s var(--ease) 0.5s;
 }
-.hero.loaded .hero h1 { opacity: 1; transform: translateY(0); }
+.hero.loaded .hero h1 { opacity: 1; transform: translateX(0); }
 .hero h1 em { font-style: normal; color: var(--brass); }
 
 .hero-sub {
   color: var(--text-muted); font-size: 18px; line-height: 1.6; max-width: 600px; font-weight: 400;
-  opacity: 0; transform: translateY(16px); transition: all 1s var(--ease) 0.8s;
+  opacity: 0; transform: translateX(-24px); transition: all 1s var(--ease) 0.8s;
 }
-.hero.loaded .hero-sub { opacity: 1; transform: translateY(0); }
+.hero.loaded .hero-sub { opacity: 1; transform: translateX(0); }
 
 .hero-actions {
   display: flex; gap: 16px; flex-wrap: wrap; align-items: center;
-  opacity: 0; transform: translateY(16px); transition: all 1s var(--ease) 0.95s;
+  opacity: 0; transform: translateX(-24px); transition: all 1s var(--ease) 0.95s;
 }
-.hero.loaded .hero-actions { opacity: 1; transform: translateY(0); }
+.hero.loaded .hero-actions { opacity: 1; transform: translateX(0); }
 
 .btn {
   display: inline-flex; align-items: center; gap: 10px;
@@ -407,8 +407,8 @@ section { position: relative; }
 .people-media.in img { clip-path: inset(0 0 0% 0); transform: scale(1); }
 .people-media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0.1) 100%); pointer-events: none; }
 .people-overlay { position: absolute; left: 0; right: 0; bottom: 0; padding: 72px 0; }
-.people-overlay .container > * { opacity: 0; transform: translateY(24px); transition: all 1s var(--ease); }
-.people-media.in .people-overlay .container > * { opacity: 1; transform: translateY(0); }
+.people-overlay .container > * { opacity: 0; transform: translateX(-40px); transition: all 1s var(--ease); }
+.people-media.in .people-overlay .container > * { opacity: 1; transform: translateX(0); }
 .people-media.in .people-big-num { transition-delay: 0.4s; }
 .people-media.in .people-tagline { transition-delay: 0.6s; }
 
